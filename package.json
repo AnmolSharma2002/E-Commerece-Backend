@@ -1,0 +1,33 @@
+{
+  "name": "e-commerce-backend",
+  "version": "1.0.0",
+  "description": "E-commerce backend API with MERN stack and AWS S3",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.913.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.1",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "imports": {
+    "#routes/*": "./routes/*",
+    "#controllers/*": "./controllers/*",
+    "#models/*": "./models/*",
+    "#utils/*": "./utils/*",
+    "#config/*": "./config/*"
+  }
+}
